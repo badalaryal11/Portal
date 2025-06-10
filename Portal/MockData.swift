@@ -1,0 +1,42 @@
+//
+//  MockData.swift
+//  Portal
+//
+//  Created by Badal Aryal on 11/06/2025.
+//
+
+import Foundation
+
+// In a real app, this would be replaced by network services and a persistent store.
+class MockData {
+    static let instance = MockData()
+    private init() {}
+
+    let chats: [Chat] = [
+        Chat(id: 999, name: "Portal AI", message: "Ask me anything!", time: "Now", unread: 1, avatar: "AI", isBot: true),
+        Chat(id: 1, name: "Priya Gurung", message: "Sounds good! See you then.", time: "10:42 AM", unread: 2, avatar: "P"),
+        Chat(id: 2, name: "Project Group", message: "Don't forget the deadline is Friday.", time: "9:15 AM", unread: 0, avatar: "PG"),
+        Chat(id: 3, name: "Bikram Rana", message: "Thanks for sending the payment!", time: "Yesterday", unread: 0, avatar: "B"),
+    ]
+
+    var messages: [Int: [Message]] = [
+        999: [Message(sender: "them", text: "Hello! How can I help you today?")],
+        1: [
+            Message(sender: "them", text: "Hey! Are we still on for lunch tomorrow?"),
+            Message(sender: "me", text: "Absolutely! How about 1 PM?"),
+            Message(sender: "them", text: "Perfect! I need to send you NRS 2000 for the concert tickets."),
+        ],
+    ]
+
+    let socialPosts: [SocialPost] = [
+        SocialPost(id: 1, name: "Sameer Thapa", handle: "@sameer_thapa", avatar: "S", time: "2h ago", text: "Exploring the city! Found this amazing viewpoint.", image: "https://placehold.co/600x400/34495e/ffffff?text=City+View"),
+        SocialPost(id: 2, name: "Priya Gurung", handle: "@priya_gurung", avatar: "P", time: "5h ago", text: "Just launched my new portfolio website!", image: nil),
+    ]
+    
+    let walletBalance: String = "32,175.50"
+    
+    let transactions: [WalletTransaction] = [
+        WalletTransaction(id: 1, type: "sent", description: "Payment to Priya Gurung", amount: "2000.00", date: "June 9"),
+        WalletTransaction(id: 2, type: "received", description: "From Project Group", amount: "6500.00", date: "June 8"),
+    ]
+}
