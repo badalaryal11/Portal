@@ -21,6 +21,8 @@
 		58144F092DF8AA040006B102 /* AuthModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F082DF8AA040006B102 /* AuthModule.swift */; };
 		58144F0B2DF8AB360006B102 /* MainAppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F0A2DF8AB360006B102 /* MainAppModule.swift */; };
 		58144F0E2DF8AC9E0006B102 /* SocialFeedModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F0D2DF8AC9E0006B102 /* SocialFeedModule.swift */; };
+		58144F102DF8AD920006B102 /* ChatListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F0F2DF8AD910006B102 /* ChatListModule.swift */; };
+		58144F122DF8AE1E0006B102 /* WalletModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F112DF8AE1E0006B102 /* WalletModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		58144F082DF8AA040006B102 /* AuthModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModule.swift; sourceTree = "<group>"; };
 		58144F0A2DF8AB360006B102 /* MainAppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppModule.swift; sourceTree = "<group>"; };
 		58144F0D2DF8AC9E0006B102 /* SocialFeedModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedModule.swift; sourceTree = "<group>"; };
+		58144F0F2DF8AD910006B102 /* ChatListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModule.swift; sourceTree = "<group>"; };
+		58144F112DF8AE1E0006B102 /* WalletModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				58144F072DF8A9900006B102 /* Auth */,
 				58144EE92DF89F960006B102 /* PortalApp.swift */,
 				58144F0A2DF8AB360006B102 /* MainAppModule.swift */,
+				58144F0F2DF8AD910006B102 /* ChatListModule.swift */,
+				58144F112DF8AE1E0006B102 /* WalletModule.swift */,
 				58144F0C2DF8AC4E0006B102 /* SocialFeed */,
 				58144EEB2DF89F960006B102 /* ContentView.swift */,
 				58144F042DF8A8320006B102 /* Welcome */,
@@ -197,9 +203,11 @@
 				58144EF62DF89F9D0006B102 /* Portal.xcdatamodeld in Sources */,
 				58144EEC2DF89F960006B102 /* ContentView.swift in Sources */,
 				58144F0B2DF8AB360006B102 /* MainAppModule.swift in Sources */,
+				58144F122DF8AE1E0006B102 /* WalletModule.swift in Sources */,
 				58144F0E2DF8AC9E0006B102 /* SocialFeedModule.swift in Sources */,
 				58144F092DF8AA040006B102 /* AuthModule.swift in Sources */,
 				58144EFD2DF8A2C10006B102 /* AppRouter.swift in Sources */,
+				58144F102DF8AD920006B102 /* ChatListModule.swift in Sources */,
 				58144EEA2DF89F960006B102 /* PortalApp.swift in Sources */,
 				58144F012DF8A6460006B102 /* Theme.swift in Sources */,
 				58144F032DF8A6EF0006B102 /* ReusableViews.swift in Sources */,
