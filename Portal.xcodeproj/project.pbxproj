@@ -14,6 +14,9 @@
 		58144EF32DF89F9D0006B102 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144EF22DF89F9D0006B102 /* Persistence.swift */; };
 		58144EF62DF89F9D0006B102 /* Portal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58144EF42DF89F9D0006B102 /* Portal.xcdatamodeld */; };
 		58144EFD2DF8A2C10006B102 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144EFC2DF8A2C10006B102 /* AppRouter.swift */; };
+		58144EFF2DF8A5A10006B102 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144EFE2DF8A5A10006B102 /* Entities.swift */; };
+		58144F012DF8A6460006B102 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F002DF8A6460006B102 /* Theme.swift */; };
+		58144F032DF8A6EF0006B102 /* ReusableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F022DF8A6EF0006B102 /* ReusableViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		58144EF22DF89F9D0006B102 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		58144EF52DF89F9D0006B102 /* Portal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Portal.xcdatamodel; sourceTree = "<group>"; };
 		58144EFC2DF8A2C10006B102 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		58144EFE2DF8A5A10006B102 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		58144F002DF8A6460006B102 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		58144F022DF8A6EF0006B102 /* ReusableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +65,14 @@
 			children = (
 				58144EE92DF89F960006B102 /* PortalApp.swift */,
 				58144EEB2DF89F960006B102 /* ContentView.swift */,
+				58144EFE2DF8A5A10006B102 /* Entities.swift */,
+				58144F022DF8A6EF0006B102 /* ReusableViews.swift */,
+				58144F002DF8A6460006B102 /* Theme.swift */,
+				58144EFC2DF8A2C10006B102 /* AppRouter.swift */,
 				58144EED2DF89F9D0006B102 /* Assets.xcassets */,
 				58144EF22DF89F9D0006B102 /* Persistence.swift */,
 				58144EF42DF89F9D0006B102 /* Portal.xcdatamodeld */,
 				58144EEF2DF89F9D0006B102 /* Preview Content */,
-				58144EFC2DF8A2C10006B102 /* AppRouter.swift */,
 			);
 			path = Portal;
 			sourceTree = "<group>";
@@ -146,11 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58144EFF2DF8A5A10006B102 /* Entities.swift in Sources */,
 				58144EF32DF89F9D0006B102 /* Persistence.swift in Sources */,
 				58144EF62DF89F9D0006B102 /* Portal.xcdatamodeld in Sources */,
 				58144EEC2DF89F960006B102 /* ContentView.swift in Sources */,
 				58144EFD2DF8A2C10006B102 /* AppRouter.swift in Sources */,
 				58144EEA2DF89F960006B102 /* PortalApp.swift in Sources */,
+				58144F012DF8A6460006B102 /* Theme.swift in Sources */,
+				58144F032DF8A6EF0006B102 /* ReusableViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
