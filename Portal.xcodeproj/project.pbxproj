@@ -18,6 +18,7 @@
 		58144F012DF8A6460006B102 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F002DF8A6460006B102 /* Theme.swift */; };
 		58144F032DF8A6EF0006B102 /* ReusableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F022DF8A6EF0006B102 /* ReusableViews.swift */; };
 		58144F062DF8A8D00006B102 /* WelcomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F052DF8A8D00006B102 /* WelcomeModule.swift */; };
+		58144F092DF8AA040006B102 /* AuthModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F082DF8AA040006B102 /* AuthModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		58144F002DF8A6460006B102 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		58144F022DF8A6EF0006B102 /* ReusableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViews.swift; sourceTree = "<group>"; };
 		58144F052DF8A8D00006B102 /* WelcomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModule.swift; sourceTree = "<group>"; };
+		58144F082DF8AA040006B102 /* AuthModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		58144EE82DF89F960006B102 /* Portal */ = {
 			isa = PBXGroup;
 			children = (
+				58144F072DF8A9900006B102 /* Auth */,
 				58144EE92DF89F960006B102 /* PortalApp.swift */,
 				58144EEB2DF89F960006B102 /* ContentView.swift */,
 				58144F042DF8A8320006B102 /* Welcome */,
@@ -94,6 +97,14 @@
 				58144F052DF8A8D00006B102 /* WelcomeModule.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		58144F072DF8A9900006B102 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				58144F082DF8AA040006B102 /* AuthModule.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				58144F062DF8A8D00006B102 /* WelcomeModule.swift in Sources */,
 				58144EF62DF89F9D0006B102 /* Portal.xcdatamodeld in Sources */,
 				58144EEC2DF89F960006B102 /* ContentView.swift in Sources */,
+				58144F092DF8AA040006B102 /* AuthModule.swift in Sources */,
 				58144EFD2DF8A2C10006B102 /* AppRouter.swift in Sources */,
 				58144EEA2DF89F960006B102 /* PortalApp.swift in Sources */,
 				58144F012DF8A6460006B102 /* Theme.swift in Sources */,
