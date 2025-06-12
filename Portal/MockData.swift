@@ -29,8 +29,8 @@ class MockData {
     ]
 
     let socialPosts: [SocialPost] = [
-        SocialPost(id: 1, name: "Sameer Thapa", handle: "@sameer_thapa", avatar: "S", time: "2h ago", text: "Exploring the city! Found this amazing viewpoint.", image: "https://placehold.co/600x400/34495e/ffffff?text=City+View"),
-        SocialPost(id: 2, name: "Priya Gurung", handle: "@priya_gurung", avatar: "P", time: "5h ago", text: "Just launched my new portfolio website!", image: nil),
+        SocialPost(id: 1, name: "Dipesh Joshi", handle: "@sameer_thapa", avatar: "S", time: "2h ago", text: "Exploring the city! Found this amazing viewpoint.", image: "https://placehold.co/600x400/34495e/ffffff?text=City+View"),
+        SocialPost(id: 2, name: "Badal Aryal", handle: "@priya_gurung", avatar: "P", time: "5h ago", text: "Just launched my new portfolio website!", image: nil),
     ]
     
     let walletBalance: String = "32,175.50"
@@ -39,4 +39,6 @@ class MockData {
         WalletTransaction(id: 1, type: "sent", description: "Payment to Priya Gurung", amount: "2000.00", date: "June 9"),
         WalletTransaction(id: 2, type: "received", description: "From Project Group", amount: "6500.00", date: "June 8"),
     ]
+    
+    
 }
