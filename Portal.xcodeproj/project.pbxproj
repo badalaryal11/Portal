@@ -24,6 +24,7 @@
 		58144F102DF8AD920006B102 /* ChatListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F0F2DF8AD910006B102 /* ChatListModule.swift */; };
 		58144F122DF8AE1E0006B102 /* WalletModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F112DF8AE1E0006B102 /* WalletModule.swift */; };
 		58144F142DF8AF950006B102 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F132DF8AF950006B102 /* MockData.swift */; };
+		58A114CC2DFA9B1500D6E91A /* SettingsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A114CB2DFA9B1500D6E91A /* SettingsModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		58144F0F2DF8AD910006B102 /* ChatListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModule.swift; sourceTree = "<group>"; };
 		58144F112DF8AE1E0006B102 /* WalletModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModule.swift; sourceTree = "<group>"; };
 		58144F132DF8AF950006B102 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		58A114CB2DFA9B1500D6E91A /* SettingsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				58144F072DF8A9900006B102 /* Auth */,
 				58144EE92DF89F960006B102 /* PortalApp.swift */,
 				58144F0A2DF8AB360006B102 /* MainAppModule.swift */,
+				58A114CB2DFA9B1500D6E91A /* SettingsModule.swift */,
 				58144F132DF8AF950006B102 /* MockData.swift */,
 				58144F0F2DF8AD910006B102 /* ChatListModule.swift */,
 				58144F112DF8AE1E0006B102 /* WalletModule.swift */,
@@ -206,6 +209,7 @@
 				58144EF62DF89F9D0006B102 /* Portal.xcdatamodeld in Sources */,
 				58144F142DF8AF950006B102 /* MockData.swift in Sources */,
 				58144EEC2DF89F960006B102 /* ContentView.swift in Sources */,
+				58A114CC2DFA9B1500D6E91A /* SettingsModule.swift in Sources */,
 				58144F0B2DF8AB360006B102 /* MainAppModule.swift in Sources */,
 				58144F122DF8AE1E0006B102 /* WalletModule.swift in Sources */,
 				58144F0E2DF8AC9E0006B102 /* SocialFeedModule.swift in Sources */,

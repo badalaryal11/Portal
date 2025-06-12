@@ -27,6 +27,7 @@ class MainAppRouter {
 // --- View ---
 struct MainAppView: View {
     @State private var selectedTab: Tab = .social
+    @State private var showingSettings = false
     var onLogout: () -> Void
     
     enum Tab: String { case social, chat, wallet }
@@ -35,10 +36,24 @@ struct MainAppView: View {
         VStack(spacing: 0) {
             ZStack {
                 switch selectedTab {
-                case .social: SocialFeedRouter.build()
-                case .chat: ChatListRouter.build()
-                case .wallet: WalletRouter.build()
+                case .social:
+                    SocialFeedRouter.build(onNavigateToSettings: { self.showingSettings = true })
+                case .chat:
+                    ChatListRouter.build(onNavigateToSettings: { self.showingSettings = true })
+                case .wallet:
+                    WalletRouter.build(onNavigateToSettings: { self.showingSettings = true })
                 }
+            }
+            .sheet(isPresented: $showingSettings) {
+                SettingsRouter.build(onLogout: {
+                    self.showingSettings = false
+                    // Give a tiny delay for the sheet to dismiss before logging out
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        self.onLogout()
+                    }
+                }, onBack: {
+                    self.showingSettings = false
+                })
             }
             
             HStack(spacing: 20) {
