@@ -1,30 +1,22 @@
-//
-//  ChatListModule.swift
-//  Portal
-//
-//  Created by Badal Aryal on 10/06/2025.
-//
 import SwiftUI
 
 // --- View ---
 struct ChatListView: View {
     @State private var chats = MockData.instance.chats
     @State private var searchText = ""
+    let onNavigateToSettings: () -> Void
     
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
                 // Header
-                HStack {
-                    Text("Chats").font(.largeTitle.bold())
-                    Spacer()
-                    Button(action: {}) {
+                HeaderView(title: "Chats") {
+                    Button(action: onNavigateToSettings) {
                         Image(systemName: "ellipsis")
                             .font(.title2)
                             .foregroundColor(Theme.textSecondary)
                     }
                 }
-                .padding()
                 
                 // Search Bar
                 HStack {
@@ -161,7 +153,6 @@ struct ConversationView: View {
         }
         .background(Theme.bg.ignoresSafeArea())
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarHidden(true) // Hiding default nav bar for custom one
     }
 
     func handleSendMessage() {
@@ -188,7 +179,8 @@ struct MessageBubbleView: View {
 
 // --- Router ---
 struct ChatListRouter {
-    static func build() -> some View {
-        ChatListView()
+    static func build(onNavigateToSettings: @escaping () -> Void) -> some View {
+        ChatListView(onNavigateToSettings: onNavigateToSettings)
     }
 }
+

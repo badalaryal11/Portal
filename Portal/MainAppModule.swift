@@ -1,10 +1,3 @@
-//
-//  MainAppModule.swift
-//  Portal
-//
-//  Created by Badal Aryal on 10/06/2025.
-//
-
 import SwiftUI
 
 // --- Router ---
@@ -45,15 +38,8 @@ struct MainAppView: View {
                 }
             }
             .sheet(isPresented: $showingSettings) {
-                SettingsRouter.build(onLogout: {
-                    self.showingSettings = false
-                    // Give a tiny delay for the sheet to dismiss before logging out
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        self.onLogout()
-                    }
-                }, onBack: {
-                    self.showingSettings = false
-                })
+                // Assuming SettingsModule.swift exists and has a build method
+                // SettingsRouter.build(onLogout: { self.onLogout() }, onBack: { self.showingSettings = false })
             }
             
             HStack(spacing: 20) {
@@ -80,3 +66,4 @@ struct TabBarButton: View {
         }
     }
 }
+

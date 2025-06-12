@@ -1,22 +1,17 @@
-//
-//  WalletModule.swift
-//  Portal
-//
-//  Created by Badal Aryal on 11/06/2025.
-//
-
-import SwiftUI
-
 import SwiftUI
 
 // --- View ---
 struct WalletView: View {
+    let onNavigateToSettings: () -> Void
+
     var body: some View {
         NavigationView {
             VStack {
-                HeaderView(title: "Wallet") {
-                    Button(action: {}) { Image(systemName: "ellipsis").foregroundColor(Theme.textSecondary).font(.title2) }
-                }
+                HeaderView(title: "Wallet", trailingItem: {
+                    Button(action: onNavigateToSettings) {
+                        Image(systemName: "ellipsis").foregroundColor(Theme.textSecondary).font(.title2)
+                    }
+                })
                 ScrollView {
                     VStack(spacing: 24) {
                         // Balance Card
@@ -79,8 +74,8 @@ struct TransactionRowView: View {
 
 // --- Router ---
 struct WalletRouter {
-    static func build() -> some View {
-        WalletView()
+    static func build(onNavigateToSettings: @escaping () -> Void) -> some View {
+        WalletView(onNavigateToSettings: onNavigateToSettings)
     }
 }
 
@@ -96,3 +91,4 @@ struct SecondaryButtonStyle: ButtonStyle {
         configuration.label.font(.headline.bold()).padding().frame(maxWidth: .infinity).background(Theme.card).foregroundColor(.white).cornerRadius(12).overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.border, lineWidth: 1)).scaleEffect(configuration.isPressed ? 0.98 : 1)
     }
 }
+
