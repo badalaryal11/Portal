@@ -38,8 +38,15 @@ struct MainAppView: View {
                 }
             }
             .sheet(isPresented: $showingSettings) {
-                // Assuming SettingsModule.swift exists and has a build method
-                // SettingsRouter.build(onLogout: { self.onLogout() }, onBack: { self.showingSettings = false })
+                SettingsRouter.build(onLogout: {
+                    self.showingSettings = false
+                    // Give a tiny delay for the sheet to dismiss before logging out
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        self.onLogout()
+                    }
+                }, onBack: {
+                    self.showingSettings = false
+                })
             }
             
             HStack(spacing: 20) {

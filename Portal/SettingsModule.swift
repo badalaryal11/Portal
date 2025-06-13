@@ -1,10 +1,3 @@
-//
-//  SettingsModule.swift
-//  Portal
-//
-//  Created by Badal Aryal on 12/06/2025.
-//
-
 import SwiftUI
 
 // MARK: - Protocols
@@ -15,6 +8,7 @@ protocol ViewToPresenterSettingsProtocol {
     func didTapNotifications()
     func didTapSecurity()
     func didTapHelp()
+    func didTapGiveFeedback()
 }
 
 protocol PresenterToRouterSettingsProtocol {
@@ -33,9 +27,9 @@ struct SettingsView: View {
             HeaderView(title: "Settings", trailingItem: {
                 EmptyView() // No trailing items in this header
             }, leadingItem: {
-                // Provides a back button
+                // Provides a back button to dismiss the sheet
                 AnyView(Button(action: onBack) {
-                    Image(systemName: "chevron.left")
+                    Image(systemName: "xmark")
                         .font(.title2)
                         .foregroundColor(Theme.text)
                 })
@@ -53,6 +47,9 @@ struct SettingsView: View {
                 })
                 SettingsListItem(icon: Image(systemName: "questionmark.circle.fill"), label: "Help & Support", onClick: {
                     presenter.didTapHelp()
+                })
+                SettingsListItem(icon: Image(systemName: "star.bubble.fill"), label: "Give Feedback", onClick: {
+                    presenter.didTapGiveFeedback()
                 })
                 
                 Spacer()
@@ -80,7 +77,7 @@ struct SettingsView: View {
 }
 
 // MARK: - Presenter
-class SettingsPresenter: ObservableObject {
+class SettingsPresenter: ObservableObject, ViewToPresenterSettingsProtocol {
     var router: PresenterToRouterSettingsProtocol?
     
     // In a real app, you might have an interactor for business logic.
@@ -108,6 +105,11 @@ class SettingsPresenter: ObservableObject {
     func didTapHelp() {
         // Use router to navigate to help screen
         print("Help tapped")
+    }
+    
+    func didTapGiveFeedback() {
+        // Use router to navigate to feedback screen
+        print("Give Feedback tapped")
     }
 
     func didTapLogout() {

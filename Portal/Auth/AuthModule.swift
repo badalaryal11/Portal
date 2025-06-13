@@ -18,7 +18,12 @@ struct AuthView: View {
     
     var body: some View {
         VStack(spacing: 24) {
-            PortalLogo(size: 60).foregroundColor(Theme.primary)
+            Image("PortalLogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(Theme.primary)
+                Text("Portal")
             Text(presenter.mode == "login" ? "Welcome Back" : "Create Account").font(.largeTitle.bold()).foregroundColor(Theme.text)
             
             HStack {

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+ // This replaces the old PortalLogo view
+
 struct PortalLogo: View {
     var size: CGFloat = 24
     var body: some View {

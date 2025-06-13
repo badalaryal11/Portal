@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Portal Logo</title>
+    <defs>
+        <!-- Defines a clean, dark background for the icon -->
+        <rect id="background" x="0" y="0" width="1024" height="1024" rx="220"></rect>
+    </defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Layer -->
+        
+        
+        <!-- Icon Symbol: "The Abstract Gateway" -->
+        <g id="Symbol" transform="translate(256.000000, 256.000000)" stroke="#818CF8" stroke-width="48">
+            
+            <!-- The outer circle representing the 'world' or a complete ecosystem -->
+            <circle id="Outer-Circle" cx="256" cy="256" r="232"></circle>
+            
+            <!-- The stylized "P" that forms the gateway/portal shape -->
+            <path d="M384,408 L384,104 L216,104 L216,264 C216,264 264,264 312,264" id="P-Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

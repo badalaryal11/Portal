@@ -19,43 +19,53 @@ struct WelcomeView: View {
     var body: some View {
         ZStack {
             RadialGradient(gradient: Gradient(colors: [Theme.primary.opacity(0.15), .clear]), center: .top, startRadius: 5, endRadius: 400).ignoresSafeArea()
+            // ... inside the WelcomeView body
             VStack {
                 Spacer()
-                PortalLogo(size: 100).foregroundColor(Theme.primary)
-                Text("Portal").font(.system(size: 50, weight: .bold)).foregroundColor(Theme.text)
-                Text("Your world, connected. Chat, social, and payments in one place.").font(.headline).foregroundColor(Theme.textSecondary).multilineTextAlignment(.center).padding(.horizontal)
+                // This is the new code using the image from your assets
+                Image("PortalLogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(Theme.primary)
                 Spacer()
-                VStack(spacing: 16) {
-                    Button(action: { presenter.didTapSignUp() }) {
-                        Text("Sign Up").font(.headline.bold()).frame(maxWidth: .infinity).padding().background(Theme.primaryBg).foregroundColor(.white).cornerRadius(12)
-                    }
-                    Button(action: { presenter.didTapLogIn() }) {
-                        Text("Log In").font(.headline.bold()).frame(maxWidth: .infinity).padding().background(Theme.card).foregroundColor(.white).cornerRadius(12)
-                    }
+                VStack(spacing: 33) {
+                    
+                    Text("Portal").font(.system(size: 50, weight: .bold)).foregroundColor(Theme.text)
+                    Text("Your world, connected. Chat, social, and payments in one place.").font(.headline).foregroundColor(Theme.textSecondary).multilineTextAlignment(.center).padding(.horizontal)
+                    Spacer()
                 }
-            }.padding()
-        }.background(Theme.bg.ignoresSafeArea())
+                    VStack(spacing: 16) {
+                        Button(action: { presenter.didTapSignUp() }) {
+                            Text("Sign Up").font(.headline.bold()).frame(maxWidth: .infinity).padding().background(Theme.primaryBg).foregroundColor(.white).cornerRadius(12)
+                        }
+                        Button(action: { presenter.didTapLogIn() }) {
+                            Text("Log In").font(.headline.bold()).frame(maxWidth: .infinity).padding().background(Theme.card).foregroundColor(.white).cornerRadius(12)
+                        }
+                    }
+                }.padding()
+            }.background(Theme.bg.ignoresSafeArea())
+        }
     }
-}
-
-// --- Presenter ---
-class WelcomePresenter {
-    var router: WelcomeRouterProtocol
-    init(router: WelcomeRouterProtocol) { self.router = router }
-    func didTapSignUp() { router.navigateToAuth(mode: "signup") }
-    func didTapLogIn() { router.navigateToAuth(mode: "login") }
-}
-
-// --- Router ---
-class WelcomeRouter: WelcomeRouterProtocol {
-    private let appRouter: AppRouter
-    init(appRouter: AppRouter) { self.appRouter = appRouter }
-    func navigateToAuth(mode: String) { appRouter.showAuth(initialMode: mode) }
     
-    static func build(router: AppRouter) -> WelcomeView {
-        let welcomeRouter = WelcomeRouter(appRouter: router)
-        let presenter = WelcomePresenter(router: welcomeRouter)
-        return WelcomeView(presenter: presenter)
+    // --- Presenter ---
+    class WelcomePresenter {
+        var router: WelcomeRouterProtocol
+        init(router: WelcomeRouterProtocol) { self.router = router }
+        func didTapSignUp() { router.navigateToAuth(mode: "signup") }
+        func didTapLogIn() { router.navigateToAuth(mode: "login") }
     }
-}
+    
+    // --- Router ---
+    class WelcomeRouter: WelcomeRouterProtocol {
+        private let appRouter: AppRouter
+        init(appRouter: AppRouter) { self.appRouter = appRouter }
+        func navigateToAuth(mode: String) { appRouter.showAuth(initialMode: mode) }
+        
+        static func build(router: AppRouter) -> WelcomeView {
+            let welcomeRouter = WelcomeRouter(appRouter: router)
+            let presenter = WelcomePresenter(router: welcomeRouter)
+            return WelcomeView(presenter: presenter)
+        }
+    }
 
