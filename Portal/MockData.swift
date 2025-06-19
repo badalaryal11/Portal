@@ -14,7 +14,7 @@ class MockData {
 
     let chats: [Chat] = [
         Chat(id: 999, name: "Portal AI", message: "Ask me anything!", time: "Now", unread: 1, avatar: "AI", isBot: true),
-        Chat(id: 1, name: "Priya Gurung", message: "Sounds good! See you then.", time: "10:42 AM", unread: 2, avatar: "P"),
+        Chat(id: 1, name: "Priya ", message: "Sounds good! See you then.", time: "10:42 AM", unread: 2, avatar: "P"),
         Chat(id: 2, name: "Project Group", message: "Don't forget the deadline is Friday.", time: "9:15 AM", unread: 0, avatar: "PG"),
         Chat(id: 3, name: "Bikram Rana", message: "Thanks for sending the payment!", time: "Yesterday", unread: 0, avatar: "B"),
     ]
@@ -29,8 +29,9 @@ class MockData {
     ]
 
     let socialPosts: [SocialPost] = [
-        SocialPost(id: 1, name: "Dipesh Joshi", handle: "@dipesh_joshi", avatar: "D", time: "2h ago", text: "Exploring the city! Found this amazing viewpoint.", image: "https://placehold.co/600x400/34495e/ffffff?text=City+View"),
+        SocialPost(id: 1, name: "Barsha Aryal", handle: "@barshaaryal", avatar: "B", time: "2h ago", text: "Exploring the city! Found this amazing viewpoint.", image: "https://picsum.photos/id/259/1080/1350"),
         SocialPost(id: 2, name: "Badal Aryal", handle: "@badal_aryal", avatar: "B", time: "5h ago", text: "Just launched my new portfolio website!", image: nil),
+        SocialPost(id: 1, name: "Visakha Poudel", handle: "@visakha_poudel", avatar: "V", time: "2h ago", text: "Getting love from my bruno.", image: "https://picsum.photos/id/237/1080/1350"),
     ]
     
     let walletBalance: String = "32,175.50"
