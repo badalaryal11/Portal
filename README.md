@@ -2,6 +2,7 @@ This is the app which combines your social, chat and payment together. Thus, mak
 
 Topics
 viper-architecture swiftui
+<div style="font-size:0">
 <p align="centre">
 <img src="https://github.com/user-attachments/assets/9e1a8219-3411-48af-b4bc-6c1f3fc114db" alt="WelcomeScreen"  width="200"/>
 <img src ="https://github.com/user-attachments/assets/6ac22b20-db8b-4b1b-824e-a949addf557b" alt="WelcomeScreen"  width="200"/>
@@ -12,4 +13,4 @@ viper-architecture swiftui
 <img src ="https://github.com/user-attachments/assets/7b66814c-b9cf-4759-bd5a-87a2afba1bc4" alt="WelcomeScreen"  width="200"/>
 
 </p>
-
+</div>
