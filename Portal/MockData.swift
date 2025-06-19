@@ -14,7 +14,7 @@ class MockData {
 
     let chats: [Chat] = [
         Chat(id: 999, name: "Portal AI", message: "Ask me anything!", time: "Now", unread: 1, avatar: "AI", isBot: true),
-        Chat(id: 1, name: "Priya ", message: "Sounds good! See you then.", time: "10:42 AM", unread: 2, avatar: "P"),
+        Chat(id: 1, name: "Priya Bhetwal", message: "Sounds good! See you then.", time: "10:42 AM", unread: 2, avatar: "P"),
         Chat(id: 2, name: "Project Group", message: "Don't forget the deadline is Friday.", time: "9:15 AM", unread: 0, avatar: "PG"),
         Chat(id: 3, name: "Bikram Rana", message: "Thanks for sending the payment!", time: "Yesterday", unread: 0, avatar: "B"),
     ]
