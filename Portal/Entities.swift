@@ -9,6 +9,7 @@ import Foundation
 
 // MARK: - Data Models
 // These are the plain data objects used throughout the app.
+
 struct Chat: Identifiable {
     let id: Int
     let name: String
@@ -30,7 +31,7 @@ struct SocialPost: Identifiable {
     let id: Int
     let name: String
     let handle: String
-    let avatar: String
+    let avatar: String?
     let time: String
     let text: String
     let image: String?

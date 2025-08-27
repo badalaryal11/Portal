@@ -29,9 +29,10 @@ class MockData {
     ]
 
     let socialPosts: [SocialPost] = [
-        SocialPost(id: 1, name: "Barsha Aryal", handle: "@barshaaryal", avatar: "B", time: "2h ago", text: "Exploring the city! Found this amazing viewpoint.", image: "https://picsum.photos/id/259/1080/1350"),
-        SocialPost(id: 2, name: "Badal Aryal", handle: "@badal_aryal", avatar: "B", time: "5h ago", text: "Just launched my new portfolio website!", image: nil),
-        SocialPost(id: 1, name: "Visakha Poudel", handle: "@visakha_poudel", avatar: "V", time: "2h ago", text: "Getting love from my bruno.", image: "https://picsum.photos/id/237/1080/1350"),
+        SocialPost(id: 1, name: "Barsha Aryal", handle: "@barshaaryal", avatar: "BA", time: "1h ago", text: "Exploring the city! Found this amazing viewpoint.", image: "https://picsum.photos/id/259/1080/1350"),
+        SocialPost(id: 2, name: "Badal Aryal", handle: "@badal_aryal", avatar: "BA", time: "5h ago", text: "Just launched my new portfolio website!", image: "https://picsum.photos/id/20/1080/1350"),
+        SocialPost(id: 3, name: "Sumina Lamsal", handle: "@sumina_lamsal", avatar: "SL", time: "3h ago", text: "Getting love from my bruno.", image: "https://picsum.photos/id/237/1080/1350"),
+        SocialPost(id: 4, name: "Prashamsa Pokhrel", handle: "@prashmsapokhrel", avatar: "PP", time: "4h ago", text: "Getting ready for a new chapter in my life", image: "https://picsum.photos/id/24/1080/1350"),
     ]
     
     let walletBalance: String = "32,175.50"

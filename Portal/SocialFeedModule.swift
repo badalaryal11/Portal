@@ -61,7 +61,7 @@ struct SocialCardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
-                Text(post.avatar).font(.title).frame(width: 44, height: 44).background(Theme.primary.opacity(0.5)).foregroundColor(.white).clipShape(Circle())
+                Text(post.avatar!).font(.title).frame(width: 44, height: 44).background(Theme.primary.opacity(0.5)).foregroundColor(.white).clipShape(Circle())
                 VStack(alignment: .leading) {
                     Text(post.name).bold()
                     Text("\(post.handle) · \(post.time)").font(.caption).foregroundColor(Theme.textSecondary)
