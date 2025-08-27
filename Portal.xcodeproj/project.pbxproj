@@ -22,10 +22,9 @@
 		58144F102DF8AD920006B102 /* ChatListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F0F2DF8AD910006B102 /* ChatListModule.swift */; };
 		58144F122DF8AE1E0006B102 /* WalletModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F112DF8AE1E0006B102 /* WalletModule.swift */; };
 		58144F142DF8AF950006B102 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58144F132DF8AF950006B102 /* MockData.swift */; };
+		5880B43E2E5F018C004D3112 /* Portal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5880B43C2E5F018C004D3112 /* Portal.xcdatamodeld */; };
 		58A114D02DFAA93B00D6E91A /* SocialFeedModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A114CF2DFAA93B00D6E91A /* SocialFeedModule.swift */; };
 		58A114D22DFAAC9E00D6E91A /* SettingsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A114D12DFAAC9E00D6E91A /* SettingsModule.swift */; };
-		58DC24EE2E5DBF170025B32E /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC24EC2E5DBF170025B32E /* Item+CoreDataClass.swift */; };
-		58DC24EF2E5DBF170025B32E /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC24ED2E5DBF170025B32E /* Item+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +45,9 @@
 		58144F0F2DF8AD910006B102 /* ChatListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModule.swift; sourceTree = "<group>"; };
 		58144F112DF8AE1E0006B102 /* WalletModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModule.swift; sourceTree = "<group>"; };
 		58144F132DF8AF950006B102 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		5880B43D2E5F018C004D3112 /* Portal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Portal.xcdatamodel; sourceTree = "<group>"; };
 		58A114CF2DFAA93B00D6E91A /* SocialFeedModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedModule.swift; sourceTree = "<group>"; };
 		58A114D12DFAAC9E00D6E91A /* SettingsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModule.swift; sourceTree = "<group>"; };
-		58DC24EC2E5DBF170025B32E /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
-		58DC24ED2E5DBF170025B32E /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +95,10 @@
 				58144F022DF8A6EF0006B102 /* ReusableViews.swift */,
 				58144F002DF8A6460006B102 /* Theme.swift */,
 				58144EFC2DF8A2C10006B102 /* AppRouter.swift */,
-				58DC24EC2E5DBF170025B32E /* Item+CoreDataClass.swift */,
-				58DC24ED2E5DBF170025B32E /* Item+CoreDataProperties.swift */,
 				58144EED2DF89F9D0006B102 /* Assets.xcassets */,
 				58144EF22DF89F9D0006B102 /* Persistence.swift */,
 				58144EEF2DF89F9D0006B102 /* Preview Content */,
+				5880B43C2E5F018C004D3112 /* Portal.xcdatamodeld */,
 			);
 			path = Portal;
 			sourceTree = "<group>";
@@ -208,19 +205,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58DC24EE2E5DBF170025B32E /* Item+CoreDataClass.swift in Sources */,
 				58144EFF2DF8A5A10006B102 /* Entities.swift in Sources */,
 				58144EF32DF89F9D0006B102 /* Persistence.swift in Sources */,
 				58144F062DF8A8D00006B102 /* WelcomeModule.swift in Sources */,
 				58144F142DF8AF950006B102 /* MockData.swift in Sources */,
 				58144EEC2DF89F960006B102 /* ContentView.swift in Sources */,
-				58DC24EF2E5DBF170025B32E /* Item+CoreDataProperties.swift in Sources */,
 				58A114D22DFAAC9E00D6E91A /* SettingsModule.swift in Sources */,
 				58144F0B2DF8AB360006B102 /* MainAppModule.swift in Sources */,
 				58144F122DF8AE1E0006B102 /* WalletModule.swift in Sources */,
 				58144F092DF8AA040006B102 /* AuthModule.swift in Sources */,
 				58144EFD2DF8A2C10006B102 /* AppRouter.swift in Sources */,
 				58144F102DF8AD920006B102 /* ChatListModule.swift in Sources */,
+				5880B43E2E5F018C004D3112 /* Portal.xcdatamodeld in Sources */,
 				58144EEA2DF89F960006B102 /* PortalApp.swift in Sources */,
 				58A114D02DFAA93B00D6E91A /* SocialFeedModule.swift in Sources */,
 				58144F012DF8A6460006B102 /* Theme.swift in Sources */,
@@ -425,6 +421,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5880B43C2E5F018C004D3112 /* Portal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5880B43D2E5F018C004D3112 /* Portal.xcdatamodel */,
+			);
+			currentVersion = 5880B43D2E5F018C004D3112 /* Portal.xcdatamodel */;
+			path = Portal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 58144EDE2DF89F960006B102 /* Project object */;
 }
