@@ -8,6 +8,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="time" optional="YES" attributeType="String"/>
         <attribute name="unread" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="isReceived" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chat" inverseName="isReceived" inverseEntity="Chat"/>
     </entity>
     <entity name="Message" representedClassName="Message" syncable="YES">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>

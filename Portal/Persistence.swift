@@ -14,6 +14,7 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
+            
             // 1. Correctly initialize the Item with its context
             // let newItem = Item(context: viewContext)
             // 2. Then, set its properties
